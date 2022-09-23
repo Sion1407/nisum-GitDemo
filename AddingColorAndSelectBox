@@ -1,0 +1,49 @@
+<html>
+    <head>
+    <script type="text/javascript">
+        function changeColor(color){
+		console.log(color);
+		document.getElementById("text").style.color = String(color.id);
+        }
+	function addOneElement(){
+		
+	}        
+    </script>
+
+<style>
+	.select1{
+		height: 100px;
+		width: 100px;
+	}	
+</style>
+
+
+</head>
+<body>
+<form>	
+<h1 id="text">Change the color</h1>
+<form>
+<input type="radio" id="red" name="color" value="Red" onClick="changeColor(this)">Red<br>
+<input type="radio" id="green" name="color"  value="Green" onClick="changeColor(this)">Green<br>
+<input type="radio" id="blue" name="color" value="Blue" onClick="changeColor(this)">Blue</label>
+</form>    
+
+
+
+<form>
+	<select multiple="multiple" class="select1">
+	<option value="1" on>1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	</select>
+	<input type="button" name="Add" onClick="addOneElement()" value="Add">
+	<input type="button" name="AddAll" value="AddAll">
+	
+	<select>
+	
+	</select>
+</table>	
+
+</form>
+</body>
+</html>
